@@ -13,13 +13,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: VISTA2(),
+      home: Vista1(),
     );
   }
 }
 
-class VISTA2 extends StatelessWidget {
-  const VISTA2({Key? key}) : super(key: key);
+class Vista1 extends StatelessWidget {
+  const Vista1({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
