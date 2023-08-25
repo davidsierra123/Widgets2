@@ -27,8 +27,10 @@ class Principal extends StatelessWidget {
       body: Container(
         margin: const EdgeInsets.only(top: 400, left: 100),
         padding: const EdgeInsets.all(0.0),
+        
         child: Row(
           children: [
+
             Column(
               children: [
                 InkWell(
@@ -46,11 +48,11 @@ class Principal extends StatelessWidget {
                     width: 70,
                     height: 50,
                     child: Center(
-                      child: Icon(Icons.ac_unit_sharp),
+                      child: Icon(Icons.help_outline),
                     ),
                   ),
                 ),
-                const Text("Copo")
+                const Text("Tienen")
               ],
             ),
 
@@ -74,11 +76,11 @@ class Principal extends StatelessWidget {
                     width: 70,
                     height: 50,
                     child: Center(
-                      child: Icon(Icons.shopping_bag),
+                      child: Icon(Icons.help_outline),
                     ),
                   ),
                 ),
-                const Text("Copo")
+                const Text("Contenido")
               ],
             ),
             const SizedBox(width: 10),
@@ -102,11 +104,11 @@ class Principal extends StatelessWidget {
                     width: 70,
                     height: 50,
                     child: Center(
-                      child: Icon(Icons.access_time),
+                      child: Icon(Icons.help_outline),
                     ),
                   ),
                 ),
-                const Text("Reloj")
+                const Text("Distinto")
               ],
             ),
           ],

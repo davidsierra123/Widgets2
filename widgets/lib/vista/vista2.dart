@@ -24,29 +24,33 @@ class Vista2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Jesus David"),
+        backgroundColor: Colors.blue,
+      ),
       body: Container(
-        margin: const EdgeInsets.only(top: 310, left: 10),
         padding: const EdgeInsets.all(0.0),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   width: 390,
-                  height: 240,
+                  height: 340,
                   // color: Colors.amber,
                   child: Image.asset(
                     'assets/it.png',
+                    width: 390, // Ancho deseado para la imagen
+                    height: 240, // Alto deseado para la imagen
+                    fit: BoxFit.cover,
                   ),
                 ),
-                // Image.asset(
-                //   'assets/it.png', // Ruta de la imagen en tu proyecto
-                //   width: 290,
-                //   height: 520,
-                //   fit: BoxFit.contain, // Ajuste de la imagen
-                // ),
                 const Center(
-                  child: Text('¡Hola niños!', style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
+                  child: Text('¡Hola niños!',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 ),
               ],
             ),

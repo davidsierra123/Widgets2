@@ -24,13 +24,25 @@ class Vista3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Jesus David"),
+        backgroundColor: Colors.blue,
+      ),
       body: Container(
-        margin: const EdgeInsets.only(top: 310, left: 10),
+        // margin: const EdgeInsets.only(top: 150, left: 10),
+
         padding: const EdgeInsets.all(0.0),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Container(
+                  margin: const EdgeInsets.only(bottom: 50),
+                  child: const Icon(Icons.ac_unit_sharp,
+                      color: Colors.blueAccent, size: 50.0),
+                ),
                 Container(
                   width: 390,
                   height: 340,
@@ -42,6 +54,7 @@ class Vista3 extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
+                const SizedBox(height: 30),
                 const Center(
                   child: Text('Este es el 2010?',
                       style:

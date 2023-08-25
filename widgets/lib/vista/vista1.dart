@@ -25,11 +25,12 @@ class Vista1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        margin: const EdgeInsets.only(top: 220, left: 80),
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(0.0),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
+          mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   width: 70,
@@ -38,14 +39,16 @@ class Vista1 extends StatelessWidget {
                 const SizedBox(height: 10),
                 Image.asset(
                   'assets/hola.png', // Ruta de la imagen en tu proyecto
-                  width: 250,
-                  height: 250,
-                  fit: BoxFit.contain, // Ajuste de la imagen
+                  width: 390,
+                  height: 280,
+                  fit: BoxFit.cover, // Ajuste de la imagen
                 ),
                 const SizedBox(height: 20),
                 const Center(
-                    child: Text('CANASTA'),
-                  ),
+                  child: Text('Hello Fuck',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                ),
               ],
             ),
             const SizedBox(width: 10),
